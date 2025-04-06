@@ -23,7 +23,7 @@ export default function RegisterPage() {
     },
     onSubmit: async (values) => {
       try {
-        const res = await fetch(baseUrl, {
+        const res = await fetch(`${baseUrl}/users/register/new`, {
           method: 'POST',
           headers:  {
             'Content-Type': 'application/json' // Memberitahu server bahwa kita mengirim JSON
