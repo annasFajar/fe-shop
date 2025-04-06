@@ -4,6 +4,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import baseUrl from '../services/api';
 
 
 export default function RegisterPage() {
@@ -22,7 +23,7 @@ export default function RegisterPage() {
     },
     onSubmit: async (values) => {
       try {
-        const res = await fetch('http://localhost:2000/users/register/new', {
+        const res = await fetch(baseUrl, {
           method: 'POST',
           headers:  {
             'Content-Type': 'application/json' // Memberitahu server bahwa kita mengirim JSON
