@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RegisterPage from './pages/registerPage';
+import Test from './pages/test'
 
 function App() {
   const [api, setApi] = useState([{
@@ -33,7 +34,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/register" element={<RegisterPage/>} />
-          <Route path='/' element={}/>
+          <Route path='/' element={<Test/>}/>
         </Routes>
       </Router>
 
