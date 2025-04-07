@@ -33,6 +33,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/register" element={<RegisterPage/>} />
+          <Route path='/' element={}/>
         </Routes>
       </Router>
 
