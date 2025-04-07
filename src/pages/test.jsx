@@ -1,4 +1,4 @@
-const test = () => {
+const Test = () => {
     return(
         <>
             <h1>connect</h1>
@@ -6,4 +6,4 @@ const test = () => {
     )
 }
 
-export default test
+export default Test
